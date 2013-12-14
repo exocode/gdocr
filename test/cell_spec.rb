@@ -9,7 +9,7 @@ describe Cell do
   end
 
   context 'should respond to' do
-    [:overpopulated, :underpopulated].each do |m|
+    [:overpopulated?, :underpopulated?, :resurrected?, :surviving?].each do |m|
       it m do
         @cell.should respond_to(m)
       end

@@ -1,10 +1,18 @@
 class Cell
 
-  def overpopulated
+  def overpopulated?
 
   end
 
-  def underpopulated
+  def underpopulated?
+
+  end
+
+  def resurrected?
+
+  end
+
+  def surviving?
 
   end
 
