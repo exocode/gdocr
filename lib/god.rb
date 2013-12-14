@@ -12,6 +12,9 @@ class God
 
   end
 
+  private
+    def pickNumber
 
+    end
 
 end

@@ -5,7 +5,7 @@ require_relative '../lib/universe'
 describe Universe do
 
   before(:each) do
-    @universe = Universe.new
+    @universe = Universe.new(10,10)
   end
 
   context 'responds to cells' do

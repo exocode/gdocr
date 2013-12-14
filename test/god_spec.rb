@@ -24,7 +24,6 @@ describe God do
 
     @god.seed
     @god.universe.cells.count.should be(count)
-
   end
 
 
