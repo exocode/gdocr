@@ -16,4 +16,13 @@ class Cell
 
   end
 
+  def add_neighbor(cell)
+    @neighbors ||= []
+    @neighbors << cell
+  end
+
+  def neighbors
+    @neighbors || []
+  end
+
 end

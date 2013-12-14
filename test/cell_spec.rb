@@ -9,11 +9,17 @@ describe Cell do
   end
 
   context 'should respond to' do
-    [:overpopulated?, :underpopulated?, :resurrected?, :surviving?].each do |m|
+    [:overpopulated?, :underpopulated?, :resurrected?, :surviving?, :add_neighbor].each do |m|
       it m do
         @cell.should respond_to(m)
       end
     end
+  end
+
+  it 'adds neighbor' do
+    @cell.add_neighbor(Cell.new)
+    @cell.add_neighbor(Cell.new)
+    @cell.neighbors.count.should be(2)
   end
 
 end
